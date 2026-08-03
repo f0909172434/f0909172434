@@ -1,33 +1,45 @@
-# Wang Chih Kai
+# Chih-Kai Wang
 
-Building local-first tools for auditable AI-assisted research and CI.
+**Undergraduate mathematics researcher building auditable systems for AI-assisted mathematical discovery.**
 
-I work on small, inspectable systems that keep evidence, claims, and verification status separate. The goal is not to make AI output look authoritative; it is to make the path from input to result easier to reproduce, audit, and challenge.
+I work at the intersection of **nonlinear analysis**, **AI for Mathematics**, and **research engineering**. My mathematical work studies bifurcation and multiplicity in nonlinear boundary-value problems; my software work makes claims, evidence, computation, and verification inspectable and reproducible.
 
-## Current projects
+> **Research principle:** model agreement is not proof, numerical evidence is not a theorem, and every promoted claim should have traceable dependencies and an independent check.
 
-### [HonestCI](https://github.com/f0909172434/honest-ci)
+## Selected work
 
-Checks whether a green CI run actually executed the tests and configurations a maintainer expected. It can emit a versioned **Evidence Bundle v1** containing its result and digests of the observed inputs.
+| Project | What it demonstrates | Status |
+|---|---|---|
+| [ProofWeave Math Lab](https://github.com/f0909172434/proofweave-math-lab) | A local-first, model-independent workspace for auditable AI-assisted mathematical research, with explicit proof, computation, conjecture, and verification states | Experimental `0.1` |
+| [RigorGraph](https://github.com/f0909172434/rigorgraph) | Claim–evidence graphs, deterministic offline audits, provenance tracking, and independent-verification gates | Public beta `1.0` |
+| [HonestCI](https://github.com/f0909172434/honest-ci) | Detection of false-green CI through JUnit evidence, expected-suite baselines, and test-execution verification | Stable `1.0` |
 
-### [RigorGraph](https://github.com/f0909172434/rigorgraph)
+## Mathematical research
 
-A public-beta, local-first tool for claim-evidence graphs and offline audit reports. It can validate and preserve an HonestCI Evidence Bundle v1, but importing evidence never promotes or verifies a claim.
+My current research concerns nonlinear boundary-value problems, exact time-map methods, bifurcation geometry, multiplicity, and computer-assisted verification. A manuscript is in preparation; unresolved statements remain explicitly marked as open rather than presented as established results.
 
-### [ProofWeave Math Lab](https://github.com/f0909172434/proofweave-math-lab)
+## What I am building toward
 
-An experimental 0.1 research workspace for statused mathematical claims, reproducible computation, model routing, and release checks. It is presented here as a standalone workflow, not as an integration that does not yet exist.
+- verifier-guided research agents that preserve mathematical provenance
+- a Lean 4 bridge for machine-checked proof artifacts
+- end-to-end AI4Math case studies with reproducible computation and failure analysis
+- benchmarks that measure unsupported-claim promotion, verifier independence, and reproduction success—not only final-answer accuracy
 
-## How the implemented pieces fit
+## Research interests
 
-`HonestCI result` → `Evidence Bundle v1` → `RigorGraph import and audit`
+`AI4Math` · `automated theorem proving` · `autoformalization` · `research agents` · `formal verification` · `nonlinear differential equations` · `bifurcation theory` · `reproducible scientific computing`
 
-ProofWeave Math Lab remains a separate, end-to-end research workspace.
+## Technical stack
 
-## Working principles
+`Python` · `TypeScript` · `SymPy` · `LaTeX` · `GitHub Actions` · `JSON Schema` · `computer-assisted proof workflows`
 
-- local-first artifacts before hosted lock-in;
-- explicit `DRAFT`, `PROPOSED`, `COMPUTATIONAL`, and `VERIFIED` boundaries;
-- reproducible checks and content digests;
-- additive compatibility for published 1.x interfaces;
-- evidence can support review, but does not become truth by ingestion.
+## Current direction
+
+I am preparing for research internships and collaborations in **AI for Mathematics, formal reasoning, theorem-proving agents, and trustworthy research automation**.
+
+<details>
+<summary><strong>中文簡介</strong></summary>
+
+我是台灣的大學生數學研究者，研究非線性邊值問題、分岔與多解性，也開發可稽核的 AI 輔助研究工具。我的核心原則是清楚區分猜想、數值證據、形式驗證與數學證明，並讓每個結論都能追溯到可重現的證據與獨立檢查。
+
+</details>
