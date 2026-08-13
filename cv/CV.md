@@ -20,7 +20,7 @@ AI for Mathematics; automated theorem proving and autoformalization; verifier-gu
 
 - Designing a benchmark protocol for deciding whether evidence justifies a requested mathematical claim-state transition.
 - Separating research, computation, formal-certificate, and independent-review states, with deterministic policy checks and counterfactual pairs.
-- Current status: alpha research scaffold and protocol development; no model results or technical report have been published.
+- Current status: public 20-pair / 40-instance alpha validates the data and evaluation pipeline; no model result or technical report has been published.
 
 ## Selected Open-Source Work
 

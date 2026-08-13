@@ -12,9 +12,9 @@ I work at the intersection of AI for Mathematics, verifiable reasoning, and repr
 
 | Destination | Entry point | Current status |
 |---|---|---|
-| **Flagship research** | [ClaimPromoteBench](https://github.com/f0909172434/claimpromote-bench) | Alpha development; no model results are reported. |
+| **Flagship research** | [ClaimPromoteBench](https://github.com/f0909172434/claimpromote-bench) | Public alpha; no model results are reported. |
 | **Technical report** | **NOT YET PUBLISHED** | A link will be added only after a reproducible pilot and public draft exist. |
-| **Code and data** | [ProofWeave](https://github.com/f0909172434/proofweave-math-lab), [RigorGraph](https://github.com/f0909172434/rigorgraph), [HonestCI](https://github.com/f0909172434/honest-ci) | Current public research infrastructure; benchmark data are not yet published. |
+| **Code and data** | [ClaimPromoteBench alpha](https://github.com/f0909172434/claimpromote-bench), [ProofWeave](https://github.com/f0909172434/proofweave-math-lab), [RigorGraph](https://github.com/f0909172434/rigorgraph), [HonestCI](https://github.com/f0909172434/honest-ci) | Alpha: 20 controlled pairs / 40 synthetic instances; no model results. |
 | **CV** | [One-page CV](cv/Chih-Kai-Wang-CV.pdf) | Updated August 2026. |
 
 ## Flagship research direction
@@ -27,7 +27,7 @@ Research question: Can a machine-checkable evidence ledger and a versioned deter
 
 The planned benchmark evaluates evidence-state transitions rather than general truth classification or abstention. It is designed to separate an agent's proposed action from the effective action after a deterministic gate, and to use counterfactual pairs to test both invalid and valid promotions.
 
-**Current status:** alpha research scaffold and protocol development. No completed benchmark, technical report, external review, or model-performance result is claimed here.
+**Current status:** public 20-pair / 40-instance alpha for validating the schema, deterministic oracle, controlled-pair design, offline baselines, gate semantics, and evaluation pipeline. No model experiment, completed v1 benchmark, technical report, external review, or independent reproduction is claimed here.
 
 ## Selected open-source work
 
