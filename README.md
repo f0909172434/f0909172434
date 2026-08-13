@@ -1,55 +1,50 @@
 # Chih-Kai Wang
 
-**Undergraduate mathematics researcher working on nonlinear analysis, AI for Mathematics, and auditable research systems.**
+**B.S. student, Mathematics Education Division, Department of Mathematics and Information Education, National Taipei University of Education. Expected 2028.**
 
-[Email](mailto:f0909172434@gmail.com) · [RigorGraph](https://github.com/f0909172434/rigorgraph) · [HonestCI](https://github.com/f0909172434/honest-ci) · Taipei, Taiwan
+Taipei, Taiwan | [Email](mailto:f0909172434@gmail.com) | [GitHub](https://github.com/f0909172434)
 
-I study bifurcation and multiplicity in nonlinear boundary-value problems. I also build open-source tools that make mathematical claims, evidence, computation, and verification easier to inspect and reproduce.
+I work at the intersection of AI for Mathematics, verifiable reasoning, and reproducible research engineering. I build deterministic tools that keep computational evidence, formal certification, independent review, and mathematical resolution as separate states rather than collapsing them into one confidence score.
 
-> Model agreement is not proof, numerical evidence is not a theorem, and promoted claims should have traceable dependencies and independent checks.
+> Model agreement is not proof. Numerical evidence is not a theorem. Every promoted claim should have traceable dependencies and an independently checkable basis.
 
 ## Start here
 
-| Project | Research or engineering question | Verifiable entry points | Status |
-|---|---|---|---|
-| [ProofWeave Math Lab](https://github.com/f0909172434/proofweave-math-lab) | How can AI-assisted mathematical research preserve proof state, evidence, and unresolved boundaries? | [Source and method](https://github.com/f0909172434/proofweave-math-lab#readme) | Experimental `0.1` |
-| [RigorGraph](https://github.com/f0909172434/rigorgraph) | How can researchers audit claim-evidence dependencies without trusting a model or hosted service? | [Quick start](https://github.com/f0909172434/rigorgraph#quick-start-three-minutes) · [Releases](https://github.com/f0909172434/rigorgraph/releases) | Public beta `1.0` |
-| [HonestCI](https://github.com/f0909172434/honest-ci) | How can CI verify that the expected tests actually ran instead of trusting a green exit code? | [Quick start](https://github.com/f0909172434/honest-ci#five-minute-quick-start) · [Releases](https://github.com/f0909172434/honest-ci/releases) | Stable `1.0` |
+| Destination | Entry point | Current status |
+|---|---|---|
+| **Flagship research** | [ClaimPromoteBench](https://github.com/f0909172434/claimpromote-bench) | Alpha development; no model results are reported. |
+| **Technical report** | **NOT YET PUBLISHED** | A link will be added only after a reproducible pilot and public draft exist. |
+| **Code and data** | [ProofWeave](https://github.com/f0909172434/proofweave-math-lab), [RigorGraph](https://github.com/f0909172434/rigorgraph), [HonestCI](https://github.com/f0909172434/honest-ci) | Current public research infrastructure; benchmark data are not yet published. |
+| **CV** | [One-page CV](cv/Chih-Kai-Wang-CV.pdf) | Updated August 2026. |
 
-## Mathematical research
+## Flagship research direction
 
-My current work concerns nonlinear boundary-value problems, exact time-map methods, bifurcation geometry, multiplicity, and computer-assisted verification. A manuscript is in preparation. Results that are still unresolved remain marked as open rather than being presented as established theorems.
+### ClaimPromoteBench
 
-The research program I am developing connects three layers:
+**Policy-Governed Evidence-State Transitions for Mathematical Research Agents**
 
-1. analytic work on nonlinear differential equations;
-2. reproducible symbolic and numerical computation;
-3. verifier-guided research infrastructure for explicit claim and evidence states.
+Research question: Can a machine-checkable evidence ledger and a versioned deterministic transition gate reduce invalid claim promotion while preserving valid promotion?
 
-## What can be checked
+The planned benchmark evaluates evidence-state transitions rather than general truth classification or abstention. It is designed to separate an agent's proposed action from the effective action after a deterministic gate, and to use counterfactual pairs to test both invalid and valid promotions.
 
-- Each selected repository contains source, tests, and reproducible local commands.
-- RigorGraph records claim-evidence dependencies and preserves independent-verification states.
-- HonestCI checks fresh JUnit evidence, expected-suite baselines, and zero-test or missing-report failure modes.
-- Project documentation distinguishes experimental software, released interfaces, open research questions, and verified outputs.
+**Current status:** alpha research scaffold and protocol development. No completed benchmark, technical report, external review, or model-performance result is claimed here.
 
-## Research directions
+## Selected open-source work
 
-- nonlinear differential equations and bifurcation theory
-- AI4Math, automated reasoning, and theorem-proving agents
-- autoformalization and a Lean 4 bridge for proof artifacts
-- reproducible scientific computing and computer-assisted proof workflows
-- benchmarks for unsupported-claim promotion, verifier independence, and reproduction success
+| Project | What can be checked | Public status |
+|---|---|---|
+| [ProofWeave Core v2](https://github.com/f0909172434/proofweave-math-lab) | Model-independent parsing of mathematical claims and proofs; deterministic Lean/Mathlib certificate checks; separate certificate, natural-language alignment, and lifecycle states | Repository release `v0.1.0`; Core package `2.0.0` |
+| [RigorGraph](https://github.com/f0909172434/rigorgraph) | Local-first claim-evidence graphs, deterministic audits, provenance and hash checks, and offline reports | Public beta; package `1.0.1` |
+| [HonestCI](https://github.com/f0909172434/honest-ci) | Checks fresh JUnit evidence and detects missing, stale, zero-test, and reduced-count results in CI | Stable package and GitHub Action; `1.0.4` |
+
+These tools check workflow evidence and formal artifacts within their documented boundaries. They do not turn a numerical scan, green CI run, reviewer decision, or model output into mathematical truth.
+
+## Research interests
+
+`AI for Mathematics` | `automated theorem proving` | `autoformalization` | `verifier-guided research agents` | `evaluation and calibration` | `reproducible scientific computing` | `nonlinear differential equations` | `bifurcation theory`
 
 ## Technical stack
 
-`Python` · `TypeScript` · `SymPy` · `LaTeX` · `GitHub Actions` · `JSON Schema` · `Lean 4 (in progress)`
+`Python` | `TypeScript` | `SymPy` | `LaTeX` | `JSON Schema` | `GitHub Actions` | `Lean 4 / Mathlib (developing)`
 
-I am preparing for research-based graduate study and collaborations in applied mathematics, formal reasoning, AI4Math, and trustworthy research automation. For research or internship discussions, contact me at [f0909172434@gmail.com](mailto:f0909172434@gmail.com).
-
-<details>
-<summary><strong>中文簡介</strong></summary>
-
-我是台灣的大學生數學研究者，研究非線性邊值問題、分岔與多解性，也開發可稽核的 AI 輔助研究工具。我的核心原則是清楚區分猜想、數值證據、形式驗證與數學證明，並讓每個結論都能追溯到可重現的證據與獨立檢查。
-
-</details>
+I am preparing for research-based graduate study and seeking opportunities to contribute to AI4Math, theorem-proving, and trustworthy evaluation projects. For research, internship, or open-source collaboration, contact [f0909172434@gmail.com](mailto:f0909172434@gmail.com).
