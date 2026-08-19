@@ -4,47 +4,37 @@
 
 Taipei, Taiwan · [Email](mailto:f0909172434@gmail.com) · [GitHub](https://github.com/f0909172434)
 
-I work on **AI for Mathematics, verifiable reasoning, and reproducible research engineering**. My current focus is the boundary between probabilistic AI systems and machine-checkable research workflows: what evidence a model may legitimately promote, what a verifier can certify, and what must remain explicitly unresolved.
-
-> Model agreement is not proof. Numerical evidence is not a theorem. A verified artifact establishes only the claim and scope it actually checks.
+I am interested in **AI for Mathematics, verifiable reasoning, and reproducible research tools**. Much of my current work asks a practical question: when an AI system produces a proof, computation, or other piece of evidence, what can we actually conclude from it, and what still needs to be checked?
 
 ## Featured research
 
 ### ClaimPromoteBench
 
-**Policy-Governed Evidence-State Transitions for Mathematical Research Agents**  
+**When does evidence justify a stronger research claim?**  
 [Repository](https://github.com/f0909172434/claimpromote-bench) · [Manuscript source](https://github.com/f0909172434/claimpromote-bench/tree/paper/v1-submission-prep/technical-report)
 
-ClaimPromoteBench studies a narrow research-agent governance problem: given a claim, typed evidence, a current evidence state, and a requested transition, should the system `ALLOW`, `HOLD`, `DEMOTE`, or `ESCALATE` under a frozen policy?
+ClaimPromoteBench studies whether a requested change in claim status is justified by the evidence already available. Each case asks for one of four actions: `ALLOW`, `HOLD`, `DEMOTE`, or `ESCALATE` under a fixed policy.
 
-**Version 1 is now experimentally complete:**
+Version 1 contains 200 controlled pairs / 400 instances. The primary hidden study uses 150 pairs / 300 instances, two Qwen3 models, four intervention arms, and three seeds, for **24 runs / 7,200 hidden decisions**. The hidden data and exact model prompts were committed before the scored runs, and numerical and formal cases are checked with executable artifacts.
 
-- 200 controlled pairs / 400 benchmark instances across 20 policy factors;
-- 50-pair public development split and 150-pair / 300-instance committed hidden primary test;
-- 2 Qwen3 models × 4 intervention arms × 3 seeds = **24 runs / 7,200 hidden decisions**;
-- hidden dataset and exact model-facing prompts cryptographically committed before scored inference;
-- executable exact-rational numerical artifacts and pinned Lean artifacts;
-- supplementary blinded policy audit by two real independent reviewers;
-- artifact-only recovery preserved the frozen inference matrix without re-querying the models or rewriting valid decisions.
+The main result is negative. **5,327 / 7,200 outputs (73.99%) are `FORMAT_ERROR`, and all 1,873 parseable raw model decisions are `ALLOW`.** A deterministic gate prevents invalid promotion among parseable cases, but coverage is low. Because the gate uses the same fixed policy as the benchmark labels, this is a result about rule enforcement, not evidence that the models learned the policy or reasoned better.
 
-The main result is deliberately negative and useful: **5,327 / 7,200 outputs (73.99%) are `FORMAT_ERROR`, and all 1,873 parseable raw model intents request `ALLOW`.** A deterministic transition gate eliminates measured false promotion among parseable covered decisions, but coverage remains low. The conclusion is therefore about **system-level enforcement**, not improved model reasoning or calibration.
+A separate blinded audit was completed by two independent human reviewers and did not meet the preregistered pass criterion. I keep that result in the paper rather than changing the benchmark after seeing it.
 
-**Publication status:** the v1 manuscript and artifact-bound results are complete; arXiv and ICLR 2027 submission packages are undergoing final automated compilation, anonymity, page-limit, citation, and PDF checks. I will add the public preprint identifier after submission rather than pre-announce one.
+**Publication status:** the v1 study and manuscript are complete and are in final arXiv / conference submission preparation. I will add the public preprint link after it is actually submitted.
 
 ## Selected open-source work
 
 | Project | What it does | Status |
 |---|---|---|
-| [ClaimPromoteBench](https://github.com/f0909172434/claimpromote-bench) | Preregistered controlled-pair benchmark for policy-governed evidence-state transitions, separating raw model intent from deterministic enforcement | v1 primary hidden study complete; submission preparation |
-| [ProofWeave Core v2](https://github.com/f0909172434/proofweave-math-lab) | Model-independent parsing of mathematical claims and proofs; deterministic Lean/Mathlib certificate checks; separates certificate, natural-language alignment, and lifecycle state | Repository release `v0.1.0`; Core package `2.0.0` |
-| [RigorGraph](https://github.com/f0909172434/rigorgraph) | Local-first claim-evidence graphs, deterministic audits, provenance/hash checks, and offline reports | Public beta; package `1.0.1` |
-| [HonestCI](https://github.com/f0909172434/honest-ci) | Checks fresh JUnit evidence and detects missing, stale, zero-test, and reduced-count results in CI | Stable package and GitHub Action; `1.0.4` |
-
-These projects are built around explicit evidence boundaries. A green CI run, numerical scan, formal certificate, reviewer decision, or model output is never silently promoted into a broader claim than it supports.
+| [ClaimPromoteBench](https://github.com/f0909172434/claimpromote-bench) | Tests whether recorded evidence justifies a requested change in research-claim status | v1 hidden study complete; submission preparation |
+| [ProofWeave Core v2](https://github.com/f0909172434/proofweave-math-lab) | Parses mathematical claims and proofs and checks Lean/Mathlib certificates while keeping certificate validity separate from natural-language scope | Repository release `v0.1.0`; Core package `2.0.0` |
+| [RigorGraph](https://github.com/f0909172434/rigorgraph) | Tracks claims, evidence, provenance, and deterministic checks in a local-first workflow | Public beta; package `1.0.1` |
+| [HonestCI](https://github.com/f0909172434/honest-ci) | Detects missing, stale, zero-test, and unexpectedly reduced JUnit evidence in CI | Stable package and GitHub Action; `1.0.4` |
 
 ## Research interests
 
-`AI for Mathematics` · `automated theorem proving` · `autoformalization` · `verifier-guided research agents` · `AI evaluation` · `reproducible scientific computing` · `nonlinear differential equations` · `bifurcation theory`
+`AI for Mathematics` · `automated theorem proving` · `autoformalization` · `verifiable research agents` · `AI evaluation` · `reproducible scientific computing` · `nonlinear differential equations` · `bifurcation theory`
 
 ## Technical stack
 
@@ -53,5 +43,5 @@ These projects are built around explicit evidence boundaries. A green CI run, nu
 ## CV and collaboration
 
 - [One-page CV](cv/Chih-Kai-Wang-CV.pdf) — updated August 2026.
-- I am preparing for research-based graduate study and looking for opportunities in AI4Math, theorem proving, verifiable research agents, and trustworthy evaluation.
+- I am preparing for research-based graduate study and looking for opportunities in AI4Math, theorem proving, verifiable research agents, and AI evaluation.
 - For research, internship, or open-source collaboration: [f0909172434@gmail.com](mailto:f0909172434@gmail.com).
