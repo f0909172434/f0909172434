@@ -2,49 +2,56 @@
 
 **B.S. student, Mathematics Education Division, Department of Mathematics and Information Education, National Taipei University of Education. Expected 2028.**
 
-Taipei, Taiwan | [Email](mailto:f0909172434@gmail.com) | [GitHub](https://github.com/f0909172434)
+Taipei, Taiwan · [Email](mailto:f0909172434@gmail.com) · [GitHub](https://github.com/f0909172434)
 
-I work at the intersection of AI for Mathematics, verifiable reasoning, and reproducible research engineering. I build deterministic tools that keep computational evidence, formal certification, independent review, and mathematical resolution as separate states rather than collapsing them into one confidence score.
+I work on **AI for Mathematics, verifiable reasoning, and reproducible research engineering**. My current focus is the boundary between probabilistic AI systems and machine-checkable research workflows: what evidence a model may legitimately promote, what a verifier can certify, and what must remain explicitly unresolved.
 
-> Model agreement is not proof. Numerical evidence is not a theorem. Every promoted claim should have traceable dependencies and an independently checkable basis.
+> Model agreement is not proof. Numerical evidence is not a theorem. A verified artifact establishes only the claim and scope it actually checks.
 
-## Start here
-
-| Destination | Entry point | Current status |
-|---|---|---|
-| **Flagship research** | [ClaimPromoteBench](https://github.com/f0909172434/claimpromote-bench) | Public alpha; no model results are reported. |
-| **Technical report** | **NOT YET PUBLISHED** | A link will be added only after a reproducible pilot and public draft exist. |
-| **Code and data** | [ClaimPromoteBench alpha](https://github.com/f0909172434/claimpromote-bench), [ProofWeave](https://github.com/f0909172434/proofweave-math-lab), [RigorGraph](https://github.com/f0909172434/rigorgraph), [HonestCI](https://github.com/f0909172434/honest-ci) | Alpha: 20 controlled pairs / 40 synthetic instances; no model results. |
-| **CV** | [One-page CV](cv/Chih-Kai-Wang-CV.pdf) | Updated August 2026. |
-
-## Flagship research direction
+## Featured research
 
 ### ClaimPromoteBench
 
-**Policy-Governed Evidence-State Transitions for Mathematical Research Agents**
+**Policy-Governed Evidence-State Transitions for Mathematical Research Agents**  
+[Repository](https://github.com/f0909172434/claimpromote-bench) · [Manuscript source](https://github.com/f0909172434/claimpromote-bench/tree/paper/v1-submission-prep/technical-report)
 
-Research question: Can a machine-checkable evidence ledger and a versioned deterministic transition gate reduce invalid claim promotion while preserving valid promotion?
+ClaimPromoteBench studies a narrow research-agent governance problem: given a claim, typed evidence, a current evidence state, and a requested transition, should the system `ALLOW`, `HOLD`, `DEMOTE`, or `ESCALATE` under a frozen policy?
 
-The planned benchmark evaluates evidence-state transitions rather than general truth classification or abstention. It is designed to separate an agent's proposed action from the effective action after a deterministic gate, and to use counterfactual pairs to test both invalid and valid promotions.
+**Version 1 is now experimentally complete:**
 
-**Current status:** public 20-pair / 40-instance alpha for validating the schema, deterministic oracle, controlled-pair design, offline baselines, gate semantics, and evaluation pipeline. No model experiment, completed v1 benchmark, technical report, external review, or independent reproduction is claimed here.
+- 200 controlled pairs / 400 benchmark instances across 20 policy factors;
+- 50-pair public development split and 150-pair / 300-instance committed hidden primary test;
+- 2 Qwen3 models × 4 intervention arms × 3 seeds = **24 runs / 7,200 hidden decisions**;
+- hidden dataset and exact model-facing prompts cryptographically committed before scored inference;
+- executable exact-rational numerical artifacts and pinned Lean artifacts;
+- supplementary blinded policy audit by two real independent reviewers;
+- artifact-only recovery preserved the frozen inference matrix without re-querying the models or rewriting valid decisions.
+
+The main result is deliberately negative and useful: **5,327 / 7,200 outputs (73.99%) are `FORMAT_ERROR`, and all 1,873 parseable raw model intents request `ALLOW`.** A deterministic transition gate eliminates measured false promotion among parseable covered decisions, but coverage remains low. The conclusion is therefore about **system-level enforcement**, not improved model reasoning or calibration.
+
+**Publication status:** the v1 manuscript and artifact-bound results are complete; arXiv and ICLR 2027 submission packages are undergoing final automated compilation, anonymity, page-limit, citation, and PDF checks. I will add the public preprint identifier after submission rather than pre-announce one.
 
 ## Selected open-source work
 
-| Project | What can be checked | Public status |
+| Project | What it does | Status |
 |---|---|---|
-| [ProofWeave Core v2](https://github.com/f0909172434/proofweave-math-lab) | Model-independent parsing of mathematical claims and proofs; deterministic Lean/Mathlib certificate checks; separate certificate, natural-language alignment, and lifecycle states | Repository release `v0.1.0`; Core package `2.0.0` |
-| [RigorGraph](https://github.com/f0909172434/rigorgraph) | Local-first claim-evidence graphs, deterministic audits, provenance and hash checks, and offline reports | Public beta; package `1.0.1` |
+| [ClaimPromoteBench](https://github.com/f0909172434/claimpromote-bench) | Preregistered controlled-pair benchmark for policy-governed evidence-state transitions, separating raw model intent from deterministic enforcement | v1 primary hidden study complete; submission preparation |
+| [ProofWeave Core v2](https://github.com/f0909172434/proofweave-math-lab) | Model-independent parsing of mathematical claims and proofs; deterministic Lean/Mathlib certificate checks; separates certificate, natural-language alignment, and lifecycle state | Repository release `v0.1.0`; Core package `2.0.0` |
+| [RigorGraph](https://github.com/f0909172434/rigorgraph) | Local-first claim-evidence graphs, deterministic audits, provenance/hash checks, and offline reports | Public beta; package `1.0.1` |
 | [HonestCI](https://github.com/f0909172434/honest-ci) | Checks fresh JUnit evidence and detects missing, stale, zero-test, and reduced-count results in CI | Stable package and GitHub Action; `1.0.4` |
 
-These tools check workflow evidence and formal artifacts within their documented boundaries. They do not turn a numerical scan, green CI run, reviewer decision, or model output into mathematical truth.
+These projects are built around explicit evidence boundaries. A green CI run, numerical scan, formal certificate, reviewer decision, or model output is never silently promoted into a broader claim than it supports.
 
 ## Research interests
 
-`AI for Mathematics` | `automated theorem proving` | `autoformalization` | `verifier-guided research agents` | `evaluation and calibration` | `reproducible scientific computing` | `nonlinear differential equations` | `bifurcation theory`
+`AI for Mathematics` · `automated theorem proving` · `autoformalization` · `verifier-guided research agents` · `AI evaluation` · `reproducible scientific computing` · `nonlinear differential equations` · `bifurcation theory`
 
 ## Technical stack
 
-`Python` | `TypeScript` | `SymPy` | `LaTeX` | `JSON Schema` | `GitHub Actions` | `Lean 4 / Mathlib (developing)`
+`Python` · `TypeScript` · `SymPy` · `LaTeX` · `JSON Schema` · `GitHub Actions` · `Lean 4 / Mathlib (developing)`
 
-I am preparing for research-based graduate study and seeking opportunities to contribute to AI4Math, theorem-proving, and trustworthy evaluation projects. For research, internship, or open-source collaboration, contact [f0909172434@gmail.com](mailto:f0909172434@gmail.com).
+## CV and collaboration
+
+- [One-page CV](cv/Chih-Kai-Wang-CV.pdf) — updated August 2026.
+- I am preparing for research-based graduate study and looking for opportunities in AI4Math, theorem proving, verifiable research agents, and trustworthy evaluation.
+- For research, internship, or open-source collaboration: [f0909172434@gmail.com](mailto:f0909172434@gmail.com).
