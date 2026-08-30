@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc">
+  <title id="title">Chih-Kai Wang — AI4Math and verifiable reasoning</title>
+  <desc id="desc">An editorial diagram connecting claims, evidence, and explicit boundaries.</desc>
+  <rect width="1200" height="430" fill="#efeee7"/>
+  <g fill="none" stroke="#c8c5b9"><path d="M0 364h1200M690 0v430"/><path d="M70 0v430M1130 0v430" stroke-dasharray="5 8"/></g>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="70" y="70" fill="#3156d8" font-size="15" font-weight="700" letter-spacing="3">CHIH-KAI WANG / TAIPEI / 2026</text>
+    <text x="70" y="178" fill="#171713" font-size="74" font-weight="750" letter-spacing="-4">KEEP EVIDENCE</text>
+    <text x="70" y="252" fill="#171713" font-size="74" font-weight="750" letter-spacing="-4">ATTACHED TO CLAIMS.</text>
+    <text x="70" y="313" fill="#65655d" font-size="19">AI for Mathematics · Verifiable reasoning · Research infrastructure</text>
+    <text x="70" y="399" fill="#65655d" font-size="13" letter-spacing="2">CLAIM / EVIDENCE / BOUNDARY</text>
+  </g>
+  <g transform="translate(738 34)">
+    <circle cx="192" cy="182" r="146" fill="none" stroke="#3156d8" stroke-width="2"/>
+    <circle cx="192" cy="182" r="103" fill="none" stroke="#ef6a58" stroke-width="2" stroke-dasharray="7 7"/>
+    <circle cx="192" cy="182" r="60" fill="#3156d8"/>
+    <path d="M46 182h292M192 36v292" stroke="#171713" stroke-opacity=".32"/>
+    <g font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" letter-spacing="2">
+      <text x="168" y="17" fill="#3156d8">BOUNDARY</text><text x="154" y="91" fill="#ef6a58">EVIDENCE</text><text x="171" y="187" fill="#fff">CLAIM</text>
+    </g>
+    <circle cx="306" cy="91" r="9" fill="#ef6a58"/><circle cx="74" cy="238" r="9" fill="#3156d8"/>
+  </g>
+</svg>
