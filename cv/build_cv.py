@@ -111,8 +111,8 @@ def styles() -> dict[str, ParagraphStyle]:
         "body": ParagraphStyle(
             "Body",
             fontName="Helvetica",
-            fontSize=8.5,
-            leading=10.3,
+            fontSize=9.3,
+            leading=12.0,
             textColor=INK,
             spaceAfter=1.2 * mm,
         ),
@@ -128,8 +128,8 @@ def styles() -> dict[str, ParagraphStyle]:
         "bullet": ParagraphStyle(
             "Bullet",
             fontName="Helvetica",
-            fontSize=8.25,
-            leading=9.9,
+            fontSize=9.0,
+            leading=11.8,
             textColor=INK,
             leftIndent=3.3 * mm,
             firstLineIndent=-2.2 * mm,
@@ -203,7 +203,7 @@ class OnePageCV(BaseDocTemplate):
             bottomMargin=10.5 * mm,
             title="Chih-Kai Wang - Curriculum Vitae",
             author="Chih-Kai Wang",
-            subject="AI for Mathematics and verifiable reasoning",
+            subject="Software engineering internships and research tools",
             creator="cv/build_cv.py",
             pageCompression=1,
         )
