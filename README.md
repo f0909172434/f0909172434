@@ -1,54 +1,38 @@
-<p align="center">
-  <img src="assets/profile-hero.svg" alt="Chih-Kai Wang — keep evidence attached to claims" width="100%" />
-</p>
+# Chih-Kai Wang | 王治凱
 
-<p align="center">
-  <a href="https://f0909172434.github.io">Portfolio</a> ·
-  <a href="cv/Chih-Kai-Wang-CV.pdf">CV</a> ·
-  <a href="mailto:f0909172434@gmail.com">Email</a>
-</p>
+I build Python and TypeScript tools for reliable testing, interactive applications, and AI-assisted research.
 
-I am **Chih-Kai Wang (王治凱)**, a B.S. student in the Mathematics Education Division at National Taipei University of Education, expected to graduate in 2028.
+I am a B.S. student in the Mathematics Education Division at National Taipei University of Education, expected to graduate in 2028. I am based in Taipei and looking for software engineering and AI application internships.
 
-I work across **AI for Mathematics, verifiable reasoning, and reproducible research engineering**. My central question is practical: when a proof, computation, model output, or review is offered as evidence, what does it actually license us to claim—and what must remain unresolved?
+[Portfolio](https://f0909172434.github.io/) · [CV](https://f0909172434.github.io/Chih-Kai-Wang-CV.pdf) · [Email](mailto:f0909172434@gmail.com)
 
-## Public work
+## Selected projects
 
-| Instrument | What you can inspect | Current state |
+| Project | What I built | Explore |
 |---|---|---|
-| [Finite Witness](https://github.com/f0909172434/finite-witness-webmcp) | A shared graph-conjecture workbench where people and agents search for the same smallest counterexample and preserve a deterministic certificate | [Live WebMCP app](https://f0909172434.github.io/finite-witness-webmcp/) |
-| [RigorGraph](https://github.com/f0909172434/rigorgraph) | Local claim-evidence graphs, deterministic audit, a self-contained offline report, and a GitHub Action | Public beta · `1.0.1` |
-| [ProofWeave Core](https://github.com/f0909172434/proofweave-math-lab) | Structured proof certification with formal validity kept separate from natural-language scope | Core package `2.0.0` |
-| [HonestCI](https://github.com/f0909172434/honest-ci) | Whether the JUnit evidence behind green CI is fresh, non-empty, and consistent with a trusted baseline | npm and GitHub Action · `1.0.4` |
-| [Charlie Alpha 4B](https://github.com/f0909172434/Charlie-Alpha-4B) | A trilingual statistical procedure-selection model whose release preserves both its DGP gain and benchmark non-improvements | Experimental `v0.3.0`; later work remains unreleased |
-| [Verified Search](https://github.com/f0909172434/dsh-plugin-verified-search) | Bounded current-source retrieval with retained sources, deterministic post-checks, and visible evidence gaps | Stable `v0.1.1` plus an experimental snapshot |
+| **Finite Witness** | A browser workbench that searches finite graphs for counterexamples. People and agents use the same search engine through the UI and eight WebMCP tools. | [Try it](https://f0909172434.github.io/finite-witness-webmcp/) · [Source](https://github.com/f0909172434/finite-witness-webmcp) |
+| **HonestCI** | A TypeScript CLI and GitHub Action that checks whether JUnit test reports are present, fresh, non-empty, and consistent with a trusted baseline. | [Demo](https://github.com/f0909172434/honest-ci/blob/main/launch/DEMO.md) · [Source](https://github.com/f0909172434/honest-ci) |
+| **RigorGraph** | A Python CLI that connects research claims to evidence, checks record integrity, and generates a self-contained offline report. | [Quick start](https://github.com/f0909172434/rigorgraph#quick-start-three-minutes) · [Source](https://github.com/f0909172434/rigorgraph) |
+| **ProofWeave Core** | Experimental Python tools for checking structured mathematical claims with Lean and retaining inspectable certification artifacts. | [Example output](https://github.com/f0909172434/proofweave-math-lab#see-the-result-first) · [Source](https://github.com/f0909172434/proofweave-math-lab) |
+| **SAIR Proof Press** | A public companion to Lean-checked solvers for equational implication, with frozen artifacts, evaluation summaries, and an English research paper. | [Project site](https://f0909172434.github.io/sair-stage2-proof-press/) · [Source](https://github.com/f0909172434/sair-stage2-proof-press) |
+| **MiniHarness** | A Python agent-harness tutorial with an eight-step workshop, offline examples, and an interactive explanation of the agent loop. The broader curriculum is under development. | [Interactive demo](https://f0909172434.github.io/miniharness/) · [Workshop](https://github.com/f0909172434/miniharness/tree/main/tutorial) |
 
-The remaining public repositories cover conservative Scientific WorkPlace automation and state-aware open desktop pets for DeepSeek Harness and Codex. Private research repositories and unreleased evaluation artifacts are intentionally absent from this page.
+## Engineering case studies
 
-## Research directions
+[Finite Witness](case-studies/finite-witness.md) · [HonestCI](case-studies/honest-ci.md) · [RigorGraph](case-studies/rigorgraph.md) · [External Windows contribution](case-studies/windows-contribution.md)
 
-**Mathematical reasoning**<br>
-Automated theorem proving, autoformalization, finite structures, and counterexample search.
+## Open-source contribution
 
-**Evidence governance**<br>
-Claim-promotion conditions, negative results, reproducible evaluation, and auditable research agents.
+I contributed a [merged Windows verification fix](https://github.com/EmiyaKatuz/Codex-Dream-Skin-Needy-Girl-Overdose/pull/10) to Codex Dream Skin. The change narrowed native-window fallback handling so unrelated errors remained failures, and repaired helper loading in standalone verification.
 
-**Research engineering**<br>
-Local-first tools, deterministic reports, source and artifact binding, and explicit safety boundaries.
+## Tools and interests
 
-## Working principles
+- Python, TypeScript, JavaScript, GitHub Actions, JSON Schema, and MLX.
+- Lean 4 / Mathlib: developing through proof-checking and research projects.
+- AI for mathematics, finite counterexample search, developer tools, and reproducible evaluation.
 
-```text
-freeze the claim  →  attach replayable evidence  →  state the boundary
-```
+I also work on [statistical procedure-selection experiments](https://github.com/f0909172434/Charlie-Alpha-4B) and [source-retaining search tools](https://github.com/f0909172434/dsh-plugin-verified-search).
 
-- A bounded search is evidence, not a proof.
-- A valid formal certificate does not automatically settle the scope of the surrounding prose.
-- A green workflow check verifies its declared contract, not universal truth.
-- No upgrade, insufficient evidence, and a negative result are outcomes worth preserving.
+My project reports keep measured results and limitations together. A finite graph search has a declared bound, a Lean certificate applies to its exact formal target, and experimental model results retain their negative findings.
 
-## About
-
-Taipei, Taiwan · Python · TypeScript · Lean 4 / Mathlib (developing)
-
-I am open to AI4Math research, internships, and open-source collaboration. Contact me at [f0909172434@gmail.com](mailto:f0909172434@gmail.com) or read the [one-page CV](cv/Chih-Kai-Wang-CV.pdf).
+For internships or collaboration, contact [f0909172434@gmail.com](mailto:f0909172434@gmail.com).
