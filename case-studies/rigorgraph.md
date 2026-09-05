@@ -23,6 +23,10 @@ On September 5, 2026, the local maintenance checks passed 64 tests, lint, schema
 
 Source pointers: [audit tests](https://github.com/f0909172434/rigorgraph/blob/main/tests/test_audit.py), [frontend](https://github.com/f0909172434/rigorgraph/tree/main/frontend), [Python implementation](https://github.com/f0909172434/rigorgraph/tree/main/src/rigorgraph).
 
-## Limits and next step
+## Inspect the exported reports
 
-The audit verifies workflow and record integrity. It does not decide whether a scientific conclusion is true. A useful next step is a short walkthrough in which a reviewer opens a sample report, changes one evidence file, and explains the resulting audit finding.
+The [valid math report](https://f0909172434.github.io/examples/rigorgraph/math.html) and [invalid promotion report](https://f0909172434.github.io/examples/rigorgraph/invalid.html) are actual self-contained exports of built-in demo fixtures. Their audits returned PASS/exit 0 and FAIL/exit 1 respectively. The invalid fixture reports `RG_EVIDENCE_TYPE_MISSING` and `RG_ACCEPT_EVIDENCE_UNCHECKED`. The [walkthrough](https://github.com/f0909172434/rigorgraph/blob/main/docs/REPORT_WALKTHROUGH.md) includes reproduction commands and snapshot hashes. Demo review records are synthetic, not new independent research reviews.
+
+## Limits
+
+The audit verifies workflow and record integrity. It does not decide whether a scientific conclusion is true. A first-user trial should check whether someone can follow a claim to its evidence and correctly explain why the invalid promotion failed.
