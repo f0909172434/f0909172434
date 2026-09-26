@@ -14,7 +14,7 @@
 Mathematics Division, Department of Mathematics and Information Education, **National Taipei University of Education (NTUE)**, expected 2028. Based in Taipei, Taiwan.  
 國立臺北教育大學 數學暨資訊教育學系 數學組（預計 2028 年畢業）。
 
-[🌐 Portfolio Website](https://f0909172434.github.io/) · [📑 Curriculum Vitae](https://f0909172434.github.io/Chih-Kai-Wang-CV.pdf) · [🧪 Interactive Labs](https://f0909172434.github.io/portfolio/) · [✉️ Email](mailto:f0909172434@gmail.com)
+[📑 Curriculum Vitae (CV)](cv/Chih-Kai-Wang-CV.pdf) · [🐙 GitHub](https://github.com/f0909172434) · [✉️ Email](mailto:f0909172434@gmail.com)
 
 ---
 

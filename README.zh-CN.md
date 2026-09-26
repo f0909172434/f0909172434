@@ -14,7 +14,7 @@
 国立台北教育大学（NTUE）数学暨信息教育学系 数学组，预计 2028 年毕业。现居台湾台北。  
 专注于自主 AI 智能体系统工程、形式化定理证明（Lean 4）、进程沙箱隔离与确定性软件工程。
 
-[🌐 个人作品集网站](https://f0909172434.github.io/) · [📑 简历下载 (CV)](https://f0909172434.github.io/Chih-Kai-Wang-CV.pdf) · [🧪 交互实验室总览](https://f0909172434.github.io/portfolio/) · [✉️ 电子邮箱](mailto:f0909172434@gmail.com)
+[📑 简历下载 (CV)](cv/Chih-Kai-Wang-CV.pdf) · [🐙 GitHub](https://github.com/f0909172434) · [✉️ 电子邮箱](mailto:f0909172434@gmail.com)
 
 ---
 

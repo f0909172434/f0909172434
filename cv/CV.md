@@ -2,7 +2,7 @@
 
 **Software Engineering & AI Systems Intern | Python, TypeScript, Autonomous Agents**
 
-[Email](mailto:f0909172434@gmail.com) | [GitHub](https://github.com/f0909172434) | [Portfolio](https://f0909172434.github.io/) | Taipei, Taiwan
+[Email](mailto:f0909172434@gmail.com) | [GitHub](https://github.com/f0909172434) | Taipei, Taiwan
 
 ## Profile
 
@@ -36,7 +36,7 @@ B.S. student, Mathematics Division, Department of Mathematics and Information Ed
 
 ## Research & Open Source
 
-**[ProofWeave Core](https://github.com/f0909172434/proofweave-math-lab)**: structured mathematical claim certification with Lean 4. **[TokenScope](https://f0909172434.github.io/tokenscope/)**: interactive causal attention and BPE tokenizer lab. **[Second Agent Kit](https://github.com/f0909172434/dsh-second-agent-kit)**: macOS Seatbelt sandbox and memory isolation.
+**[ProofWeave Core](https://github.com/f0909172434/proofweave-math-lab)**: structured mathematical claim certification with Lean 4. **[TokenScope](https://github.com/f0909172434/tokenscope)**: interactive causal attention and BPE tokenizer lab. **[Second Agent Kit](https://github.com/f0909172434/dsh-second-agent-kit)**: macOS Seatbelt sandbox and memory isolation.
 
 ## Technical Skills
 
