@@ -2,6 +2,10 @@
   <img src="assets/profile-hero.svg" alt="Chih-Kai Wang banner" width="100%" />
 </p>
 
+<p align="center">
+  <b><a href="README.md">English</a> · <a href="README.zh-TW.md">繁體中文</a> · <a href="README.zh-CN.md">简体中文</a></b>
+</p>
+
 # Chih-Kai Wang (王治凱)
 
 > **Building verifiable agent systems, sandboxed execution runtimes, and formal mathematics tools.**
