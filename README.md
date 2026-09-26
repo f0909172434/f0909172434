@@ -1,32 +1,98 @@
-# Chih-Kai Wang | 王治凱
+<p align="center">
+  <img src="assets/profile-hero.svg" alt="Chih-Kai Wang banner" width="100%" />
+</p>
 
-I build Python and TypeScript tools that make AI and mathematical research results inspectable and reproducible.
+# Chih-Kai Wang (王治凱)
 
-I am a B.S. student in the Mathematics Division, Department of Mathematics and Information Education at National Taipei University of Education, expected 2028. Based in Taipei; open to software engineering and AI application internships.
+> **Building verifiable agent systems, sandboxed execution runtimes, and formal mathematics tools.**
+> 致力於打造可驗證的自主 Agent 架構、內核沙盒執行環境與形式化數學證明系統。
 
-[Portfolio](https://f0909172434.github.io/) · [CV](https://f0909172434.github.io/Chih-Kai-Wang-CV.pdf) · [Email](mailto:f0909172434@gmail.com)
+Mathematics Division, Department of Mathematics and Information Education, **National Taipei University of Education (NTUE)**, expected 2028. Based in Taipei, Taiwan.  
+國立臺北教育大學 數學暨資訊教育學系 數學組（預計 2028 年畢業）。
 
-## Selected work
+[🌐 Portfolio Website](https://f0909172434.github.io/) · [📑 Curriculum Vitae](https://f0909172434.github.io/Chih-Kai-Wang-CV.pdf) · [🧪 Interactive Labs](https://f0909172434.github.io/portfolio/) · [✉️ Email](mailto:f0909172434@gmail.com)
 
-| Project | What it does | Explore |
-|---|---|---|
-| **[HonestCI](https://github.com/f0909172434/honest-ci)** | Checks that the JUnit evidence behind green CI is fresh, non-empty, and consistent with a trusted baseline. | [Source](https://github.com/f0909172434/honest-ci) |
-| **[Finite Witness](https://github.com/f0909172434/finite-witness-webmcp)** | Search finite graphs for counterexamples, save certificates, and replay the finite search prefix with an independent Python checker. | [Try it](https://f0909172434.github.io/finite-witness-webmcp/) |
-| **[RigorGraph](https://github.com/f0909172434/rigorgraph)** | Connect research claims to evidence, audit file integrity and review records, and generate an offline report. | [Try it](https://f0909172434.github.io/examples/rigorgraph/math.html) |
-| **[ProofWeave Core](https://github.com/f0909172434/proofweave-math-lab)** | Turns author-supplied structured proofs into inspectable certification runs while separating formal validity from semantic scope. | [Source](https://github.com/f0909172434/proofweave-math-lab) |
-| **[SAIR Proof Press](https://github.com/f0909172434/sair-stage2-proof-press)** | Public companion to Lean-checked equational implication solvers, with frozen artifacts, released-input evaluation and an English paper. | [Try it](https://f0909172434.github.io/sair-stage2-proof-press/) |
-| **[TokenScope](https://github.com/f0909172434/tokenscope)** | Change attention, sampling, and BPE controls, inspect the arithmetic, and export or replay an experiment. | [Try it](https://f0909172434.github.io/tokenscope/?lang=en) |
+---
 
-HonestCI checks test-execution evidence. RigorGraph audits evidence and review records. ProofWeave checks an explicit formal target with Lean; semantic alignment remains a separate question.
+## 🌟 Featured Research & Engineering Systems
 
-## Learning and experiments
+### 🤖 Autonomous Agent Architectures & Sandboxed Runtimes
+- **[DSH Architecture Lab](https://github.com/f0909172434/dsh-architecture-lab)**  
+  *Production-grade autonomous agent research laboratory for DeepSeek Harness.*  
+  Features kernel-level Lima Linux VM isolation, micro-cent token broker metering, immutable cryptographic research protocols (`review-protocol.json`), and factorial empirical trials across multiple memory and planning recipes (A/B/C/D). Verified 100% test pass rate with DeepSeek-V4.1-Flash.
+- **[RuleShift](https://github.com/f0909172434/ruleshift)**  
+  *Deterministic local testbed evaluating agent memory adaptation under dynamic rule changes.*  
+  Encompasses 800 paired tasks with automated state verification and replayable evidence. Empirically demonstrated that foundational retrieval delivers top-tier 95.6% success rates with superior cost efficiency.
+- **[DSH Second Agent Kit](https://github.com/f0909172434/dsh-second-agent-kit)**  
+  *macOS defense-in-depth security and memory isolation suite for DeepSeek Harness.*  
+  Combines macOS Seatbelt kernel profiles (network restrictions, local socket channels), interactive circuit breakers (anti-deadlock protection), and `AsyncLocalStorage`-based project memory isolation.
+- **[MiniHarness](https://github.com/f0909172434/miniharness)**  
+  *Comprehensive 8-step AI Agent Harness engineering curriculum and workshop in Python.*  
+  Provides an offline-first learning path from tool dispatch and agent loops to memory palaces and production-grade architectures, accompanied by a complete Traditional Chinese curriculum.
+- **[Verified Search Plugin](https://github.com/f0909172434/dsh-plugin-verified-search)**  
+  *Source-verifiable, hallucination-resistant retrieval workflow for DeepSeek Harness.*  
+  Backed by 250+ unit tests and 42 frozen benchmark corpora, featuring structured JSON extraction and explicit evidence-gap tracking (`unresolved`).
 
-[MiniHarness](https://github.com/f0909172434/miniharness) teaches agent engineering through an eight-step workshop with a Traditional Chinese prerequisite curriculum. [Charlie Alpha](https://github.com/f0909172434/Charlie-Alpha-4B) records statistical procedure-selection experiments, including negative results. [Verified Search](https://github.com/f0909172434/dsh-plugin-verified-search) retains retrieval sources; its extended tools remain experimental.
+---
 
-## Open-source contribution
+### 📐 Formal Mathematics & Automated Theorem Proving
+- **[ProofWeave Core](https://github.com/f0909172434/proofweave-math-lab)**  
+  *Structured mathematical claim verification platform powered by Lean 4.*  
+  Transforms natural and structured mathematical arguments into inspectable certification runs, rigorously separating formal proof validity (Lean 4 kernel checked) from semantic statement alignment.
+- **[SAIR Proof Press](https://github.com/f0909172434/sair-stage2-proof-press)**  
+  *Equational implication solver companion with heuristic search and Lean 4 certificate generation.*  
+  Provides public companion datasets, immutable benchmark artifacts, released-input evaluation suites, and an accompanying academic paper.
+- **[Finite Witness](https://github.com/f0909172434/finite-witness-webmcp)**  
+  *WebMCP-integrated finite-graph counterexample search tool.*  
+  Features bounded exhaustive search, client-side data sovereignty, inspectable certificates, and an independent Python replay verifier.
 
-I contributed a [merged Windows verification fix](https://github.com/EmiyaKatuz/Codex-Dream-Skin-Needy-Girl-Overdose/pull/10) to Codex Dream Skin: unrelated native-window errors remain failures, and standalone verification loads its helpers correctly. I also maintain [DeepSeek Girl for Codex](https://github.com/f0909172434/deepseek-girl-codex-pet) and its [Harness adapter](https://github.com/f0909172434/dsh-deepseek-girl-pet), built around one animation atlas.
+---
 
-Python · TypeScript · GitHub Actions · JSON Schema · MLX. Developing Lean 4 / Mathlib skills through formal-checking and research projects.
+### 🛡️ Engineering Quality, CI & Reproducibility
+- **[HonestCI](https://github.com/f0909172434/honest-ci)**  
+  *Developer-first GitHub Action and CLI that makes green CI truly meaningful.*  
+  Wraps test execution, verifies fresh and uncorrupted JUnit XML evidence, guards against test-count drops relative to trusted default branches, and detects false-green CI anti-patterns (`v1.0.4` on npm & GitHub Marketplace).
+- **[RigorGraph](https://github.com/f0909172434/rigorgraph)**  
+  *Local-first claim-evidence DAGs and deterministic audit reports.*  
+  Enforces four-eyes review principles (separation of author and independent reviewer duties), detects DAG cycles, computes SHA-256 byte fingerprints, and outputs portable offline HTML audit dossiers.
 
-<!-- Generated from f0909172434.github.io/src/data/projects.json and scripts/render-profile.mjs. -->
+---
+
+### 🔬 Interactive AI Labs & Specialized Tools
+- **[TokenScope](https://github.com/f0909172434/tokenscope)**  
+  *Interactive bilingual browser laboratory for LLM causal attention, token sampling, and BPE.*  
+  Features inspectable $5 \times 5$ self-attention matrices, temperature/top-k/top-p probability distribution controls, and a fully reversible Unicode BPE tokenizer.
+- **[Charlie Alpha 4B](https://github.com/f0909172434/Charlie-Alpha-4B)**  
+  *Trilingual statistical procedure-selection model optimized for Apple Silicon MLX.*  
+  Provides reproducible statistical decision assistance with built-in cautious clarification fallbacks (`needs_clarification`) for ambiguous problem formulations.
+- **[DeepSeek Girl Pets](https://github.com/f0909172434/deepseek-girl-codex-pet)**  
+  *16-direction animated companion plugin for DeepSeek Harness & Codex Desktop.*  
+  Zero DOM pollution, native lifecycle hook synchronization, and 100% offline privacy preservation.
+
+---
+
+## 🛠️ Technical Competencies
+
+| Domain | Technologies & Frameworks |
+| :--- | :--- |
+| **Languages** | Python, TypeScript, JavaScript (Node.js 20+), Lean 4, SQL, Bash/Zsh |
+| **Agent & Harness Engineering** | DeepSeek Harness, Model Context Protocol (MCP), WebMCP, Tool Calling Loops, Memory Palaces |
+| **Sandboxing & Isolation** | Lima Linux VM, Docker, macOS Seatbelt (`sandbox-exec`), Process Isolation, Circuit Breakers |
+| **Formal Methods & Math** | Lean 4 & Mathlib, Proof Assistants, Equational Logic, Finite Graph Search, Abstract Algebra |
+| **AI & Machine Learning** | Apple Silicon MLX, PyTorch, Causal Self-Attention, BPE Tokenization, Local LLM Quantization |
+| **Quality & Infrastructure** | GitHub Actions, HonestCI, JUnit XML Standards, Vitest / Pytest, Prettier / ESLint / Ruff |
+
+---
+
+## 💡 Engineering Philosophy
+
+1. **Keep Evidence Attached to Claims**: Claims without verifiable computational evidence remain conjectures. Every conclusion must be grounded in replayable artifacts.
+2. **Defense-in-Depth & Fail-Closed Design**: Sandbox boundaries, Token budgets, and execution timeouts must fail closed, protecting system integrity and user resources.
+3. **Determinism & Reproducibility**: Research tools and benchmarks should operate 100% offline with pinned seeds and cryptographic hashes, eliminating dependence on external network states.
+4. **Constructive Open-Source Craftsmanship**: Deliver robust, well-documented, and human-friendly software that empowers developers, students, and researchers alike.
+
+---
+
+<p align="center">
+  <sub>Designed with precision in Taipei · Open to software engineering & AI research internships.</sub>
+</p>
