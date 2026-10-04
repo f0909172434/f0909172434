@@ -7,3 +7,5 @@ This contribution to Codex Dream Skin was merged on July 28, 2026. It narrowed t
 The important decision was the scope of error handling: an expected native-window limitation could use a fallback, while unrelated errors still had to remain failures. An overly broad fallback would make the verification result less useful by treating distinct failures as the same condition.
 
 The merged PR provides public evidence of an accepted change to an external project. The September portfolio review checked the PR's diff and merge state; it did not rerun that project's Windows environment. Its validation record should be read in the PR itself.
+
+See also the two later merged upstream fixes listed on the profile: DeepSeek Harness Desktop #740 (2026-09-26) and dsh-engram #4 (2026-09-21).
