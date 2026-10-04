@@ -1,102 +1,91 @@
-<p align="center">
-  <img src="assets/profile-hero.svg" alt="王治凱 個人介紹橫幅" width="100%" />
-</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/profile-hero-dark.svg">
+  <img src="assets/profile-hero.svg" alt="Chih-Kai Wang — claims, with the evidence attached. A four-cycle C4: four vertices of degree 2, zero triangles." width="100%">
+</picture>
 
-<p align="center">
-  <b><a href="README.md">English</a> · <a href="README.zh-TW.md">繁體中文</a> · <a href="README.zh-CN.md">简体中文</a></b>
-</p>
+[English](README.md) · 繁體中文 · [简体中文](README.zh-CN.md)
 
-# 王治凱 (Chih-Kai Wang)
+# Chih-Kai Wang 王治凱
 
-> **致力於打造可驗證的自主 Agent 架構、內核沙盒執行環境與形式化數學證明系統。**  
-> *Building verifiable agent systems, sandboxed execution runtimes, and formal mathematics tools.*
+用 Python 與 TypeScript 做可檢查的 AI 與數學研究工具：主張附上證據、負面結果留著、邊界說清楚。
 
-國立臺北教育大學（NTUE）數學暨資訊教育學系 數學組，預計 2028 年畢業。現居台灣台北。  
-專注於自主 AI 代理系統工程、形式化定理證明（Lean 4）、程序沙盒隔離與確定性軟體工程。
+國立臺北教育大學 數學暨資訊教育學系 數學組 · 預計 2028 年畢業。台北，台灣。Python · TypeScript · 尋找軟體與 AI 實習。
 
-[📑 履歷下載 (CV)](cv/Chih-Kai-Wang-CV.pdf) · [🐙 GitHub](https://github.com/f0909172434) · [✉️ 電子信箱](mailto:f0909172434@gmail.com)
+[作品集](https://f0909172434.github.io/?lang=zh-Hant) · [履歷 PDF](https://f0909172434.github.io/Chih-Kai-Wang-CV.pdf) · [Email](mailto:f0909172434@gmail.com)
 
----
+## 近況 · 2026 年 10 月
 
-## 🌟 精選核心研究與工程專案
+- 發布三件全部以程式完成的作品：卜 ORACLE、病名為AI、world.execute(me)。
+- 把 RuleDiff 的負面結果凍結成技術報告；RuleShift-Web 的論文仍在投稿前。
+- 兩個上游修正已合併：DeepSeek Harness Desktop 與 dsh-engram。
+- 透過 ProofWeave 與 SAIR 學 Lean 4 / Mathlib。
 
-### 🤖 自主 Agent 架構與沙盒執行環境
-- **[DSH Architecture Lab](https://github.com/f0909172434/dsh-architecture-lab)**  
-  *針對 DeepSeek Harness 的生產級自主 Agent 架構研究實驗室。*  
-  具備 Lima Linux 虛擬機內核隔離、微美分級 Token 費用扣款攔截審計、不可變加密研究協定（`review-protocol.json`），以及涵蓋記憶與規劃四大配方（A/B/C/D）的階乘實證研究。已驗證 DeepSeek-V4.1-Flash 達到 100% 外部測試通過率。
-- **[RuleShift](https://github.com/f0909172434/ruleshift)**  
-  *評估 Agent 記憶在動態規則變更下適應能力的確定性本機測試床。*  
-  涵蓋 800 次配對任務、自動化世界狀態驗證與可重放證據。實證發現隨需即時檢索（Retrieval）以更低呼叫成本達到與選擇性更新相同的高成功率（95.6%），提供極具成本效益的架構選型。
-- **[DSH Second Agent Kit](https://github.com/f0909172434/dsh-second-agent-kit)**  
-  *DeepSeek Harness 的 macOS 縱深防禦安全與記憶隔離工具組。*  
-  結合 macOS Seatbelt 內核沙盒設定檔（限制 IP 網路、開放本機 Socket 通訊）、互動操作熔斷保護（防死鎖安全機制），以及基於 `AsyncLocalStorage` 的專案記憶動態隔離。
-- **[MiniHarness](https://github.com/f0909172434/miniharness)**  
-  *8 步驟深入學習 AI Agent Harness 系統架構的 Python 實戰工作坊。*  
-  提供零外部依賴的本機學習路徑，從工具派發、Agent 循環到記憶宮殿與生產級架構，附帶完整的繁體中文先備教材與體系圖。
-- **[Verified Search Plugin](https://github.com/f0909172434/dsh-plugin-verified-search)**  
-  *DeepSeek Harness 的可稽核現況來源檢索與抗幻覺驗證外掛。*  
-  由 250+ 項確定性測試與 42 組凍結語料庫驗證，支援結構化 JSON 擷取與顯式證據缺口標記（`unresolved`），從根源防止模型產生無根據的推論。
+## 精選作品
 
----
+| 專案 | 做什麼 | 狀態 | 開啟 |
+|---|---|---|---|
+| **[HonestCI](https://github.com/f0909172434/honest-ci)** | CLI 與 GitHub Action：檢查 JUnit 報告存在、新鮮，且測試數不低於可信基線。不判斷測試品質。 | v1.0.4 · npm / GitHub Marketplace | [原始碼](https://github.com/f0909172434/honest-ci) |
+| **[RigorGraph](https://github.com/f0909172434/rigorgraph)** | 本機優先的 Python CLI：把研究主張連到證據檔案與獨立審查記錄，檢查 SHA-256 雜湊，輸出離線稽核報告。VERIFIED 表示通過記錄的流程，不表示結論為真。 | PyPI 1.0.1 · public beta | [實際網站](https://f0909172434.github.io/examples/rigorgraph/math.html) |
+| **[Finite Witness](https://github.com/f0909172434/finite-witness-webmcp)** | 在瀏覽器裡窮舉 6 個頂點以內的小圖找反例，輸出可由獨立 Python 腳本重播的憑證。通過有限搜尋是證據，不是證明。 | educational tool · 8 WebMCP tools | [實際網站](https://f0909172434.github.io/finite-witness-webmcp/) |
+| **[SAIR Proof Press](https://github.com/f0909172434/sair-stage2-proof-press)** | 等式蘊涵求解器的公開伴隨站：輸出 Lean 檢查的證明或有限反模型。凍結產物在 1,669 / 1,669 個公開輸入上通過，最終執行沒有呼叫模型。 | released-input evaluation · frozen artifacts | [實際網站](https://f0909172434.github.io/sair-stage2-proof-press/) |
+| **[卜 ORACLE](https://github.com/f0909172434/ORACLE)** | 4 分 30 秒短片：凌晨三點，有人問 AI「她會好起來嗎？」Three.js 在無頭 Chromium 裡只用 CPU 渲染，配樂與音效用 Python 合成。README 為片中的史料註明出處，並標示哪些是重建。 | v3.0 release · Oct 2026 | [觀看](https://youtu.be/kQH1PZRkn00) |
+| **[RuleDiff negative result](https://github.com/f0909172434/rulediff-negative-result)** | 四頁技術報告：詞彙式政策影響預測器在開發集的 macro-F1 是 0.99，在一組保留資料上掉到 0.67。未經同儕審查。 | negative result · technical report | [原始碼](https://github.com/f0909172434/rulediff-negative-result) |
 
-### 📐 形式化數學與自動定理證明
-- **[ProofWeave Core](https://github.com/f0909172434/proofweave-math-lab)**  
-  *由 Lean 4 核心驅動的結構化數學主張驗證平台。*  
-  將結構化數學證明轉化為透明可稽核的認證流程，嚴謹分離「形式證明有效性」（由 Lean 4 內核驗證）與「語意陳述對齊範圍」，具備確定性運算預算。
-- **[SAIR Proof Press](https://github.com/f0909172434/sair-stage2-proof-press)**  
-  *等式推論求解器與 Lean 4 形式化證書產出伴隨專案。*  
-  提供公開伴隨資料集、不可變基準成品、釋出輸入評估套件，以及完整的英文學術研究論文。
-- **[Finite Witness](https://github.com/f0909172434/finite-witness-webmcp)**  
-  *整合 WebMCP 的有限圖有界反例搜尋工具。*  
-  具備有界窮舉搜尋、純前端瀏覽器資料主權、可檢視證書，以及完全獨立的 Python 重播驗證器。
+## 我怎麼工作
 
----
+**設定框架。** 我寫下問題、邊界，以及什麼才算完成：哪些測試、哪個重播、哪個雜湊。
 
-### 🛡️ 軟體工程品質、CI 憑據與可重現性
-- **[HonestCI](https://github.com/f0909172434/honest-ci)**  
-  *讓綠燈 CI 真正代表測試如實執行的開發者 GitHub Action 與 CLI。*  
-  封裝測試命令、驗證新鮮且未損壞的 JUnit XML 憑據、防範測試數量相對預設分支異常下降，並能警告 GitHub Actions 中可疑的假綠燈寫法（已發布於 npm 與 GitHub Marketplace，版本 `v1.0.4`）。
-- **[RigorGraph](https://github.com/f0909172434/rigorgraph)**  
-  *本地優先的主張-證據 DAG 圖譜與確定性審計報告系統。*  
-  實作四眼審核原則（作者與獨立審查者職責分離）、DAG 環狀依賴偵測、SHA-256 位元組數位指紋，並能輸出離線獨立 HTML 審查檔案。
+**執行。** Claude Code 與 Codex（含 Codex Cloud）在我審閱的分支上寫大部分的程式、測試與文件。這些倉庫裡大多數的行是 agent 打出來的；每一個主張都由我負責。
 
----
+**決定。** 由證據決定，不由信心決定：測試、獨立的重播檢查器、內容雜湊。負面結果和正面結果一樣，用同樣的標準留下來。
 
-### 🔬 互動式 AI 探索與特色工具
-- **[TokenScope](https://github.com/f0909172434/tokenscope)**  
-  *因果注意力矩陣、Token 採樣與 BPE 的雙語互動瀏覽器實驗室。*  
-  具備可檢查的 $5 \times 5$ 自注意力矩陣、溫度／top-k／top-p 概率分布控制，以及完全可反轉的 Unicode BPE 分詞器。
-- **[Charlie Alpha 4B](https://github.com/f0909172434/Charlie-Alpha-4B)**  
-  *專為 Apple Silicon MLX 優化的三語統計程序選擇輔助模型。*  
-  提供可重現的統計決策建議，內建審慎澄清機制（`needs_clarification`），避免在資訊不足時做出武斷推論。
-- **[DeepSeek Girl Pets](https://github.com/f0909172434/deepseek-girl-codex-pet)**  
-  *DeepSeek Harness 與 Codex Desktop 的 16 方向動態視線追蹤桌面寵物擴充。*  
-  純淨無痕設計、零 DOM 污染、官方生命週期勾子同步，且 100% 本機離線運作保障隱私。
+這個網站與 GitHub 個人頁 README 由同一份目錄檔產生；兩者不一致時，建置會失敗。
 
----
+## 以程式完成的影片
 
-## 🛠️ 技術專業與技術堆疊
+2026 年 10 月的三件作品：畫面、音樂與剪接全部是原始碼。每個倉庫都記錄了流程與限制。
 
-| 領域分類 | 核心技術、語言與框架 |
-| :--- | :--- |
-| **程式語言** | Python, TypeScript, JavaScript (Node.js 20+), Lean 4, SQL, Bash/Zsh |
-| **Agent 與系統工程** | DeepSeek Harness, Model Context Protocol (MCP), WebMCP, Tool Calling Loops, 記憶宮殿 |
-| **沙盒與程序隔離** | Lima Linux VM, Docker, macOS Seatbelt (`sandbox-exec`), 程序組隔離, 熔斷控制器 |
-| **形式化方法與數學** | Lean 4 & Mathlib, 形式證明輔助器, 等式邏輯, 有限圖搜尋, 近世代數 |
-| **AI 與機器學習** | Apple Silicon MLX, PyTorch, 因果自注意力機制, BPE 分詞技術, 本機 LLM 量化推理 |
-| **軟體品質與基礎架構** | GitHub Actions CI/CD, HonestCI, JUnit XML 標準, Vitest / Pytest, Prettier / ESLint / Ruff |
+- **[卜 ORACLE](https://github.com/f0909172434/ORACLE)** — 4 分 30 秒短片：凌晨三點，有人問 AI「她會好起來嗎？」Three.js 在無頭 Chromium 裡只用 CPU 渲染，配樂與音效用 Python 合成。README 為片中的史料註明出處，並標示哪些是重建。 `Three.js r169 · SwiftShader (CPU) · numpy/scipy score` · [觀看](https://youtu.be/kQH1PZRkn00)
+- **[病名為AI · The Disease Called AI](https://github.com/f0909172434/The-Disease-Called-AI)** — 原創歌曲與手繪水彩 MV，3 分 35 秒，67 個鏡頭。樂譜是一支 Python 程式；DiffSinger 歌聲用固定種子逐位元重現；用 Whisper 聽寫檢查咬字。 `p5.js + p5.brush · DiffSinger · Kokoro · Whisper QA` · [觀看](https://youtu.be/ha-ANfqri6g)
+- **[world.execute(me); · Claude Code](https://github.com/f0909172434/world-execute-me-claude-code)** — 把 Mili 的 world.execute(me); 演成一場 Claude Code 會話，直接在終端機裡即時播放。純 Node、零依賴；每一格畫面都是歌曲時間的函數。非官方同人作品，承接 MisakaZentai 的 DeepSeek Harness 版；不含歌曲音檔。 `Node 20, zero dependencies · 24-bit ANSI · braille/sextant canvases` · [觀看](https://youtu.be/iEsGiRECytY)
 
----
+## 留下來的負面結果
 
-## 💡 核心工程哲學
+沒有照期望走的結果也公開，和成功的結果一樣附上凍結的產物。
 
-1. **證據緊隨主張（Keep Evidence Attached to Claims）**：沒有可計算憑據的推論僅為猜想。每一項技術結論都必須由可重放的實證或形式化憑證支撐。
-2. **縱深防禦與失能閉鎖（Defense-in-Depth & Fail-Closed Design）**：安全沙盒邊界、Token 費用上限與執行逾時保護皆必須具備失能閉鎖機制，在異常發生時第一時間守護系統安全與資源。
-3. **確定性與離線可重現（Determinism & Reproducibility）**：研究工具與評測基準堅持支援 100% 離線執行與固定種子，擺脫對外部網路環境不可控波動的依賴。
-4. **正向積極的開源工藝（Constructive Open-Source Craftsmanship）**：以清晰的人話溝通架構思維，透過透明可稽核的工程實踐賦能開發者與社群。
+- **[RuleShift](https://github.com/f0909172434/ruleshift)** — 簡單檢索與較複雜的記憶策略表現相當；複雜度沒有換到成效。
+- **[RuleShift-Web](https://github.com/f0909172434/ruleshift-web)** — 在凍結的保留矩陣上，不用 LLM 的控制器勝過兩個模型。
+- **[RuleDiff negative result](https://github.com/f0909172434/rulediff-negative-result)** — 開發集 0.99、保留集 0.67；完整論文的後續依預先登錄的規則停止，凍結成這份報告。
+- **[Charlie Alpha 4B](https://github.com/f0909172434/Charlie-Alpha-4B)** — P-Bench 與 StatQA 沒有改善；只有模擬基準有變化。
 
----
+## 已合併的上游貢獻
 
-<p align="center">
-  <sub>在台北精心打造 · 熱忱歡迎軟體工程與 AI 研究實習合作機會。</sub>
-</p>
+- [dsh-tauri/deepseek-harness-desktop](https://github.com/dsh-tauri/deepseek-harness-desktop/pull/740) — 規範化符號連結的 worktree 路徑，避免重建 worktree 時誤判並刪除未提交的修改。 (2026-09-26)
+- [kenz1117/dsh-engram](https://github.com/kenz1117/dsh-engram/pull/4) — 追溯舊資料庫的宣稱，加入保守的遷移。 (2026-09-21)
+- [EmiyaKatuz/Codex-Dream-Skin-Needy-Girl-Overdose](https://github.com/EmiyaKatuz/Codex-Dream-Skin-Needy-Girl-Overdose/pull/10) — 讓 Windows 驗證失敗可區分：縮小原生視窗的降級判斷，修正獨立執行時的輔助模組載入。 (2026-07-28) · [案例](case-studies/windows-contribution.md)
+
+## 其他作品
+
+**工具**
+
+- [Verified Search](https://github.com/f0909172434/dsh-plugin-verified-search) — DeepSeek Harness 檢索外掛：保留引用片段，讓證據缺口可見。只有 verified_search 是穩定版，四個擴充工具仍屬實驗。250 個測試；尚無獨立驗證。 *v0.1.1 · stable search / experimental extensions*
+- [Second Agent Kit](https://github.com/f0909172434/dsh-second-agent-kit) — DeepSeek Harness 的 macOS 修補：shell 程序的 Seatbelt 限制、輸入呼叫上限、以專案為單位的記憶隔離。缺口都有記錄；它不是萬用防火牆。 *v0.1.4 · macOS only · experimental parts*
+- [DSH Architecture Lab](https://github.com/f0909172434/dsh-architecture-lab) — 開發預覽：在 DeepSeek Harness 上跑隔離的記憶／規劃實驗（Lima VM 或 Seatbelt），附外部評判與費用計量。目前的結果只來自一個小型修復任務。85 個測試。 *v0.1.0-dev.9 · development preview*
+
+**研究**
+
+- [ProofWeave Core](https://github.com/f0909172434/proofweave-math-lab) — 把作者手寫的結構化 Markdown 證明交給固定版本的 Lean 4 / Mathlib 檢查，並把「已認證」與「人工確認語意對齊」分開回報。不做自然語言翻譯。 *experimental · Core 2*
+- [RuleShift](https://github.com/f0909172434/ruleshift) — 確定性的本機測試床，看 agent 記憶策略如何面對規則改變。這次先導實驗裡，簡單檢索與較複雜的策略表現相當（153 / 160），成本更低。 *research pilot · 800 paired tasks*
+- [RuleShift-Web](https://github.com/f0909172434/ruleshift-web) — Web 政策記憶稽核工作台：3,200 次模型執行與 1,600 次對照。不用 LLM 的控制器比兩個模型都強。草稿論文，未經審查。 *pre-submission research snapshot*
+- [Charlie Alpha 4B](https://github.com/f0909172434/Charlie-Alpha-4B) — 實驗性的 Qwen3.5-4B MLX 微調，在本機挑選統計程序。在模擬基準有改善（DGP-Regret −34%），在 P-Bench 與 StatQA 沒有。 *experimental v0.3.0 · mixed results*
+
+**學習**
+
+- [TokenScope](https://github.com/f0909172434/tokenscope) — 雙語瀏覽器實驗室：手動設定的單頭 5×5 注意力玩具、取樣控制（temperature、top-k、top-p）、逐步 BPE 合併示範，數值可匯出。 *educational browser lab*
+- [MiniHarness](https://github.com/f0909172434/miniharness) — Python 工作坊：八步做出一個小型 agent harness，離線使用腳本化的模擬模型，附 38 個模組的繁體中文課程。不是生產環境用的。 *8-step workshop · zh-TW curriculum*
+
+**其他**
+
+- [DeepSeek Girl](https://github.com/f0909172434/deepseek-girl-codex-pet) — 同一份動畫圖集、兩個非官方宿主套件：Codex Desktop 的 16 方向動畫寵物，以及回應 Session 狀態的 DeepSeek Harness 外掛，離線運作。 *Codex v0.1.0 · Harness v0.2.0 · unofficial*
+
+<sub>由 <a href="https://github.com/f0909172434/f0909172434.github.io/blob/main/src/data/projects.json">projects.json</a> 經 <code>scripts/render-profile.mjs</code> 產生；手動修改會被覆蓋。</sub>
